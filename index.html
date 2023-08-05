@@ -2,53 +2,42 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Área do Professor</title>
+    <link rel="stylesheet" href="estilos/area.css">
 </head>
-<body>
+<body onload="">
+    <header>
+        <h1 id="bemvindo">Bem-Vindo, Professor </h1>
+        
+        <nav>
+            <ul>
+                <li><a href="">Minha Turma</a></li>
+                <li><a href="">Minhas Aulas</a></li>
+                <li><a href="">Meus Trabalhos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
     <main>
-        <section id="login">
+        <section>
+            <h2>Minha Turma</h2>
+        </section>
 
-            <div id="imagem">
-                
-            </div>
+        <section>
+            <h2>Minhas Aulas</h2>
+        </section>
 
-            <div id="formulario">
-
-                <h1>Login</h1>
-
-                <p>Seja Bem-Vindo(a) novamente, Professor. Faça login para acessar sua área de trabalho e poder fazer as configurações na sua turma</p>
-
-                <form action="area.html" method="post" autocomplete="on">
-
-                    <div class="campo">
-                        <span class="material-symbols-outlined">person</span>
-                        <input type="text" name="nome" id="inome" placeholder="Seu Nome" required>
-                        <label for="inome">Nome</label>
-                    </div>
-
-                    <div class="campo">
-                        <span class="material-symbols-outlined">key</span>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" autocomplete="current-password" required maxlength="20">
-                        <label for="isenha">Senha</label>
-                    </div>
-
-                    <a href="area.html"><input type="submit" value="Entrar" onclick="entrar()"></a>
-
-                    <a href="#" class="botao" onclick="esqueci()">
-                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
-                    </a>
-
-                </form>
-
-            </div>
-
+        <section>
+            <h2>Meus Trabalhos</h2>
         </section>
     </main>
+
+    <footer>
+        <p>Criado por <strong>João Vitor C. Domingos</strong></p>
+    </footer>
 
     <script src="script/script.js"></script>
 </body>
