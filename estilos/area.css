@@ -61,8 +61,13 @@ h2, h3 {
     text-align: center;
 }
 
-h3 {
+main > section > h2 {
+    font-size: 1.9em;
+}
+
+main > section > h3 {
     margin-bottom: 10px;
+    font-size: 1.3em;
 }
 
 main > section > input {
@@ -121,6 +126,66 @@ input#nasc-aluno {
 
 div.adicionar > input {
     padding: 7px 20px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 50px;
 }
 
 /* SECTION MINHAS AULAS */
+section#aulas > div.aulas > div.aula {
+    margin-bottom: 40px;
+}
+
+section#aulas > div.aulas > div.aula > h3 {
+    font-size: 1.05em;
+    padding: 0px 10px;
+}
+
+section#aulas > div.aulas > div.aula > p {
+    font-size: 0.93em;
+    text-align: justify;
+    padding: 5px 20px 10px 20px;
+}
+
+section#aulas > div.aulas > div.aula > div {
+    position: relative;
+}
+
+section#aulas > div.aulas > div.aula > iframe {
+    border: 1px solid black;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+section#aulas > div.aulas > div.aula:last-child {
+    margin-bottom: 0px;
+}
+
+input#aula-titulo, input#link-aula {
+    width: 60%;
+}
+
+textarea#aula-comen {
+    width: 90%;
+    height: 100px;
+    margin-top: 5px;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background-color: rgb(102, 102, 102);
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+footer > p > strong:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
