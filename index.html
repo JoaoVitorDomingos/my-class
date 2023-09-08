@@ -6,15 +6,16 @@
     <title>Área do Professor</title>
     <link rel="stylesheet" href="estilos/area.css">
 </head>
-<body onload="">
+
+<body>
     <header>
-        <h1 id="bemvindo">Bem-Vindo, Professor </h1>
+        <h1 id="bemvindo">Bem-Vindo, Professor</h1>
         
         <nav>
             <ul>
                 <li><a href="">Minha Turma</a></li>
                 <li><a href="">Minhas Aulas</a></li>
-                <li><a href="">Meus Trabalhos</a></li>
+                <!-- <li><a href="">Meus Trabalhos</a></li> -->
             </ul>
         </nav>
     </header>
@@ -22,21 +23,154 @@
     <hr>
 
     <main>
-        <section>
+        <section id="turma">
             <h2>Minha Turma</h2>
+            <h3>3°D</h3>
+
+            <div class="div-tabela-alunos">
+                <table class="tabela-alunos">
+                    <thead>
+                        <tr>
+                            <th>Alunos</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Nota 4</th>
+                            <th>Média</th>
+                            <th>Aprovado?</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>João Vitor</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Luis Otávio</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>8.5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Valdinei</td>
+                            <td>10</td>
+                            <td>7</td>
+                            <td>5</td>
+                            <td>9.5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Daiane Priscila</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <input type="button" value="Adicionar novo aluno">
+
+            <div class="adicionar">
+                <span>
+                    <label for="nome-aluno">Nome do aluno:</label>
+                    <input type="text" name="nome" id="nome-aluno" required minlength="10">
+                </span>
+
+                <span>
+                    <label for="nasc-aluno">Data de Nascimento do aluno:</label>
+                    <input type="date" name="nasc-aluno" id="nasc-aluno" required>
+                </span>
+
+                <p>Sexo do aluno:</p>
+                <span>
+                    <input type="radio" name="sexo" id="sexo-m" checked><label for="sexo-m">Masculino</label><br>
+                    <input type="radio" name="sexo" id="sexo-f"><label for="sexo-f">Feminino</label>
+                </span>
+
+                <span>
+                    <label for="foto-aluno">Foto do aluno:</label>
+                    <input type="file" name="foto-aluno" id="foto-aluno" required>
+                </span>
+
+                <input type="button" value="Adicionar">
+            </div>
         </section>
 
-        <section>
+        <section id="aulas">
             <h2>Minhas Aulas</h2>
+            <h3>3°D</h3>
+
+            <div class="aulas">
+                <div class="aula">
+                    <h3>Questão 150 - Caderno Azul | Função do Segundo Grau | MATEMÁTICA ENEM 2022</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis deserunt, quasi quo nisi, quibusdam saepe explicabo distinctio eaque esse, ea modi ab. Rerum, nisi ad maiores excepturi accusantium at!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6a1d3cz2GYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="aula">
+                    <h3>FUNÇÃO LOGARÍTMICA para o ENEM | Tudo que você precisa saber! [Parte 1]</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis deserunt, quasi quo nisi, quibusdam saepe explicabo distinctio eaque esse, ea modi ab. Rerum, nisi ad maiores excepturi accusantium at!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E5NHqj9yx9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="aula">
+                    <h3>Matemática Básica para o ENEM | Parte 1 (Introdução e Dicas Importantes)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis deserunt, quasi quo nisi, quibusdam saepe explicabo distinctio eaque esse, ea modi ab. Rerum, nisi ad maiores excepturi accusantium at!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uaYFrtduFmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="aula">
+                    <h3>NOVO EDITAL DO ENEM, SAIBA O QUE MUDOU</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis deserunt, quasi quo nisi, quibusdam saepe explicabo distinctio eaque esse, ea modi ab. Rerum, nisi ad maiores excepturi accusantium at!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9kvY-RdTnsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <input type="button" value="Adicionar Aula">
+            <div class="adicionar">
+
+                <label for="aula-titulo">Título da aula:</label>
+                <input type="text" name="aula-titulo" id="aula-titulo" required minlength="5" maxlength="30">
+
+                <label for="link-aula">Link da Aula:</label>
+                <input type="text" name="link-aula" id="link-aula" required>
+
+                <label for="aula-comen">Adicionar comentários (opcional):</label>
+                <textarea name="aula-comen" id="aula-comen" cols="30" rows="10"></textarea>
+
+                <input type="button" value="Adicionar">
+            </div>
         </section>
+
+        <!--
 
         <section>
             <h2>Meus Trabalhos</h2>
         </section>
+
+        -->
+        
     </main>
 
     <footer>
         <p>Criado por <strong>João Vitor C. Domingos</strong></p>
+        <div class="sociais">
+
+        </div>
     </footer>
 
     <script src="script/script.js"></script>
