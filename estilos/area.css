@@ -183,9 +183,19 @@ footer {
 footer > p {
     text-align: center;
     color: white;
+    margin-bottom: 10px;
 }
 
 footer > p > strong:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+footer > div.sociais {
+    width: 30%;
+    margin: auto;
+}
+
+footer > div.sociais > a > img {
+    width: 35%;
 }
