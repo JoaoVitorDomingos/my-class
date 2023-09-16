@@ -1,1 +1,60 @@
 @charset "UTF-8";
+
+@media screen and (orientation = landscape) {
+    header > h1 {
+        font-size: 2.7em;
+    }
+    
+    main > section > h2 {
+        font-size: 2.2em;
+    }
+
+    main > section > h3 {
+        font-size: 1.6em;
+    }
+
+    main > section > input, div.adicionar > input {
+        font-size: .9em;
+    }
+    
+    /* SECTION TURMA */
+    table.tabela-alunos {
+        margin: auto;
+    }
+
+    section#turma > input, div.adicionar {
+        margin-left: 40px;
+    }
+
+    /* SECTION AULAS */
+    section#aulas > div.aulas > div.aula {
+        margin-bottom: 60px;
+    }
+
+    section#aulas > div.aulas > div.aula > h3 {
+        font-size: 1.3em;
+    }
+
+    section#aulas > div.aulas > div.aula > p {
+        font-size: 1.1em;
+        width: 95%;
+        margin: auto;
+    }
+
+    section#aulas > input {
+        margin-left: 33px;
+    }
+
+    /* FOOTER */
+    footer > p {
+        font-size: 1.3em;
+    }
+
+    footer > div.sociais > a {
+        color: rgb(102, 102, 102);
+    }
+
+    footer > div.sociais > a > img {
+        width: 27%;
+    }
+}
