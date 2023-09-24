@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* CELL TELA DEITADA */
 @media screen and (orientation = landscape) {
     header > h1 {
         font-size: 2.7em;
@@ -56,5 +57,88 @@
 
     footer > div.sociais > a > img {
         width: 27%;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    main > section#turma > div.div-tabela-alunos > table.tabela-alunos {
+        width: 90%;
+    }
+}
+
+/* NOTEBOOK E PC */
+@media screen and (min-width: 1200px) {
+    /* HEADER */
+    header > h1 {
+        font-size: 3em;
+    }
+
+    header > nav {
+        font-size: 1.3em;
+    }
+    
+    /* MAIN */
+    main > section#turma > input, main > section#aulas > input {
+        width: 20%;
+        font-size: 1em;
+        display: block;
+        margin: 33px auto 10px auto;
+        
+    }
+
+    main > section > div.adicionar {
+        max-width: 70%;
+        margin: auto;
+        font-size: 1.3em;
+    }
+
+    main > section {
+        font-size: 1.2em;
+        margin-top: 70px;
+    }
+
+    /* SECTION ALUNOS */
+    main > section#turma > div.div-tabela-alunos > table.tabela-alunos {
+        max-width: 70%;
+    }
+
+    /* SECTION AULAS */
+    main > section#aulas > div.aulas {
+        margin-top: 40px;
+    }
+
+    main > section#aulas > div.aulas > div.aula > h3 {
+        font-size: 1.5em;
+    }
+
+    main > section#aulas > div.aulas > div.aula > p {
+        max-width: 80%;
+        font-size: 1.3em;
+    }
+
+    main > section#aulas > div.aulas > div.aula > iframe {
+        max-width: 60%;
+        height: 442px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 30px;
+    }
+
+    footer > p {
+        font-size: 1.7em;
+    }
+
+    footer > div.sociais {
+        width: 15%;
+    }
+}
+
+/* TELAS GRANDER */
+@media screen and (min-width: 1200px) {
+    main > section > div.adicionar {
+        max-width: 60%;
     }
 }
