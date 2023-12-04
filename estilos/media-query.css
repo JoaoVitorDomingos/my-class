@@ -65,6 +65,11 @@
     main > section#turma > div.div-tabela-alunos > table.tabela-alunos {
         width: 90%;
     }
+
+    /* SECTION AULAS */
+    main > section#aulas > div.aulas > div.aula > iframe {
+        height: 300px;
+    }
 }
 
 /* NOTEBOOK E PC */
@@ -106,20 +111,31 @@
     /* SECTION AULAS */
     main > section#aulas > div.aulas {
         margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main > section#aulas > div.aulas > div.aula {
+        border: 5px solid black;
+        margin: 0px 10px 10px 20px;
+        width: 30%;
+        height: auto;
     }
 
     main > section#aulas > div.aulas > div.aula > h3 {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        padding: 0;
+        margin: 5px;
     }
 
     main > section#aulas > div.aulas > div.aula > p {
-        max-width: 80%;
-        font-size: 1.3em;
+        width: 100%;
+        font-size: 1em;
     }
 
     main > section#aulas > div.aulas > div.aula > iframe {
-        max-width: 60%;
-        height: 442px;
+        max-width: 100%;
+        margin: 5px auto 10px auto;
     }
 
     /* FOOTER */
@@ -136,7 +152,7 @@
     }
 }
 
-/* TELAS GRANDER */
+/* TELAS GRANDE */
 @media screen and (min-width: 1200px) {
     main > section > div.adicionar {
         max-width: 60%;

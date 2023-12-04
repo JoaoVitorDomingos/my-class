@@ -196,6 +196,10 @@ footer > div.sociais {
     margin: auto;
 }
 
+footer > div.sociais > a {
+    color: rgb(102, 102, 102);
+}
+
 footer > div.sociais > a > img {
     width: 35%;
 }
