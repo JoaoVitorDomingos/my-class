@@ -25,5 +25,14 @@ function adicionar_click_td() {
 }
 
 function mudar_nota() {
-    alert("funcionou")
+    var notanova = prompt("Coloque a nota.")
+    //console.log('nota nova = ' + notanova)
+
+    var notaselecionada = event.target
+    //console.log("nota selecionada")
+    //console.log(notaselecionada)
+
+    notaselecionada.innerText = Number.parseFloat(notanova)
+
+    media_notas()
 }
