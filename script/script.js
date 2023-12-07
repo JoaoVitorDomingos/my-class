@@ -34,13 +34,19 @@ function mudar_nota() {
     var notanova = prompt("Coloque a nota.")
     //console.log('nota nova = ' + notanova)
 
-    var notaselecionada = event.target
-    //console.log("nota selecionada")
-    //console.log(notaselecionada)
+    if(notanova >= 0 && notanova <= 10) {
+        var notaselecionada = event.target
+        //console.log("nota selecionada")
+        //console.log(notaselecionada)
 
-    notaselecionada.innerText = Number.parseFloat(notanova)
+        notaselecionada.innerText = Number.parseFloat(notanova)
 
-    media_notas()
+        media_notas()
+
+    } else {
+        alert("A nota vai de 0 a 10!")
+        mudar_nota()
+    }
 }
 
 function aprovado(linha, media) {
