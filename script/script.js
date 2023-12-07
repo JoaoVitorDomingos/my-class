@@ -2,7 +2,7 @@ var tbody = document.getElementsByTagName("tbody")[0]
 var maxtr = tbody.childElementCount
 
 function media_notas() {
-    console.log('maximo de linhas = ' + maxtr)
+    //console.log('maximo de linhas = ' + maxtr)
 
     for(linha = 0; linha < maxtr; linha++) {
         var tr = tbody.children[linha]
@@ -71,7 +71,7 @@ function adicionarAluno() {
         alert("Preencha os campos obrigatórios: Nome do Aluno, Data de Nascimento do aluno e Sexo do Aluno")
 
     } else {
-        alert('adicionado')
+        //alert('adicionado')
         //console.log("Nome = " + nome_aluno.value)
         //console.log("Nascimento = " + nascimento.value)
 
@@ -95,4 +95,42 @@ function adicionarAluno() {
     }
 
     maxtr = tbody.childElementCount
+}
+
+function adicionarAula() {
+    var div_aulas = document.getElementsByClassName("aulas")[0]
+
+    var titulo = document.getElementById("aula-titulo")
+    var link = document.getElementById("link-aula")
+    var comentario = document.getElementById("aula-comen")
+
+    //console.log("Titulo: " + titulo.value)
+    //console.log("Link: " + link.value)
+    //console.log("Comentário: " + comentario.value)
+
+    if(titulo.value == 0 || link.value == 0) {
+        alert("Preecha os campos obrigatórios: Título da aula e Link da aula!")
+
+    } else {
+        //alert("adicionado")
+
+        var aula = document.createElement('div')
+        aula.setAttribute("class", "aula")
+
+        var titulo_aula = document.createElement("h3")
+        titulo_aula.innerText = titulo.value
+        aula.appendChild(titulo_aula)
+
+        if(comentario.value !== 0) {
+            var comen_aula = document.createElement('p')
+            comen_aula.innerText = comentario.value
+            aula.appendChild(comen_aula)
+        }
+
+        var link_aula = document.createElement("p")
+        link_aula.innerText = link.value
+        aula.appendChild(link_aula)
+
+        div_aulas.appendChild(aula)
+    }
 }
