@@ -1,6 +1,8 @@
 var tbody = document.getElementsByTagName("tbody")[0]
 var maxtr = tbody.childElementCount
 
+var div_adicionar = document.getElementsByClassName("adicionar")
+
 function media_notas() {
     //console.log('maximo de linhas = ' + maxtr)
 
@@ -132,5 +134,17 @@ function adicionarAula() {
         aula.appendChild(link_aula)
 
         div_aulas.appendChild(aula)
+    }
+}
+
+function esconder() {
+    for(var i = 0; i < div_adicionar.length; i++) {
+        div_adicionar[i].style.display = "none"
+    }
+}
+
+function aparecer() {
+    for(var i = 0; i < div_adicionar.length; i++) {
+        div_adicionar[i].style.display = "block"
     }
 }

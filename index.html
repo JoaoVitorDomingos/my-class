@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 
-<body onload="media_notas(), adicionar_click_td()">
+<body onload="media_notas(), adicionar_click_td(), esconder()">
     <header>
         <h1 id="bemvindo">Bem-Vindo, Professor</h1>
         
@@ -83,7 +83,7 @@
                 </table>
             </div>
 
-            <input type="button" value="Adicionar novo aluno">
+            <input type="button" value="Adicionar novo aluno" onclick="aparecer()">
 
             <div class="adicionar">
                 <span>
@@ -149,7 +149,7 @@
                 </div>
             </div>
 
-            <input type="button" value="Adicionar Aula">
+            <input type="button" value="Adicionar Aula" onclick="aparecer()">
 
             <div class="adicionar">
 
