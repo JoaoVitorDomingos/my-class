@@ -1,7 +1,9 @@
 var tbody = document.getElementsByTagName("tbody")[0]
 var maxtr = tbody.childElementCount
 
+var escondido = false
 var div_adicionar = document.getElementsByClassName("adicionar")
+var botao_adicionar = document.getElementsByClassName("botao-adicionar")
 
 function media_notas() {
     //console.log('maximo de linhas = ' + maxtr)
@@ -97,6 +99,9 @@ function adicionarAluno() {
     }
 
     maxtr = tbody.childElementCount
+
+    escondido = false
+    aparecer(escondido)
 }
 
 function adicionarAula() {
@@ -135,16 +140,45 @@ function adicionarAula() {
 
         div_aulas.appendChild(aula)
     }
+
+    escondido = false
+    aparecer(escondido)
 }
 
-function esconder() {
-    for(var i = 0; i < div_adicionar.length; i++) {
-        div_adicionar[i].style.display = "none"
+function aparecer(boolean) {
+    if(!boolean) {
+        for(i = 0; i < div_adicionar.length; i++) {
+            div_adicionar[i].classList.add("esconder")
+            escondido = true
+        }
     }
-}
 
-function aparecer() {
-    for(var i = 0; i < div_adicionar.length; i++) {
-        div_adicionar[i].style.display = "block"
+    var botao_apertado = event.target
+
+    if(botao_apertado == botao_adicionar[0]) {
+        //console.log("O botão apertado é igual ao botão da tabela.")
+        var contem_classe = div_adicionar[0].classList.contains("esconder")
+        //console.log("Variavel contem_classe: " + contem_classe)
+
+        if(contem_classe) {
+            //console.log("entrou no if como verdadeiro")
+            div_adicionar[0].classList.remove("esconder")
+        } else {
+            //console.log("entrou no if como falso")
+            div_adicionar[0].classList.add("esconder")
+        }
+
+    } else if(botao_apertado == botao_adicionar[1]) {
+        //console.log("o botão apertado é igual ao botão das aulas")
+        var contem_classe = div_adicionar[1].classList.contains("esconder")
+        //console.log("Variavel contem_classe: " + contem_classe)
+
+        if(contem_classe) {
+            //console.log("entrou no if como verdadeiro")
+            div_adicionar[1].classList.remove("esconder")
+        } else {
+            //console.log("entrou no if como falso")
+            div_adicionar[1].classList.add("esconder")
+        }
     }
 }

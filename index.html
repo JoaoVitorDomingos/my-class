@@ -6,9 +6,15 @@
     <title>Área do Professor</title>
     <link rel="stylesheet" href="estilos/area.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+
+    <style> /* Para uso do JavaScript */
+        .esconder {
+            display: none;
+        }
+    </style>
 </head>
 
-<body onload="media_notas(), adicionar_click_td(), esconder()">
+<body onload="media_notas(), adicionar_click_td(), aparecer(escondido)">
     <header>
         <h1 id="bemvindo">Bem-Vindo, Professor</h1>
         
@@ -83,7 +89,7 @@
                 </table>
             </div>
 
-            <input type="button" value="Adicionar novo aluno" onclick="aparecer()">
+            <input type="button" value="Adicionar novo aluno" onclick="aparecer(escondido)" class="botao-adicionar">
 
             <div class="adicionar">
                 <span>
@@ -149,7 +155,7 @@
                 </div>
             </div>
 
-            <input type="button" value="Adicionar Aula" onclick="aparecer()">
+            <input type="button" value="Adicionar Aula" onclick="aparecer(escondido)" class="botao-adicionar">
 
             <div class="adicionar">
 
