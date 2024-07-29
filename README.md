@@ -1,5 +1,5 @@
 # My Class
- Este é um projeto onde estou **colocando em prática** o que venho estudando sobre **JavaScript**.
+ Este é um projeto onde estou **colocando em prática** o que estudei sobre **JavaScript**.
 
  É um sistema de aulas onde é possível lançar notas de alunos, adicionar novos alunos e novas aulas. Construido com **HTML**, **CSS** e **JavaScript**.
 
